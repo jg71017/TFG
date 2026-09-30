@@ -427,3 +427,45 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# ==========================================
+# JAVA & SPRING BOOT
+# ==========================================
+target/
+*.class
+*.jar
+*.war
+*.ear
+.mvn/
+
+# Ignorar configuraciones locales de Spring Boot (ideal para credenciales)
+application-local.properties
+application-local.yml
+application-dev.properties
+
+# ==========================================
+# DESARROLLO MÓVIL (Adicionales a .NET MAUI)
+# ==========================================
+# Las carpetas bin/ y obj/ ya están arriba, añadimos cachés y binarios de Android/iOS
+*.apk
+*.aab
+*.ipa
+xcuserdata/
+.gradle/
+local.properties
+
+# ==========================================
+# POSTGRESQL & BASES DE DATOS
+# ==========================================
+*.sql
+*.sqlite
+*.db
+*.dump
+*.backup
+*.bak
+pgadmin.log
+
+# Ignorar archivos de variables de entorno con contraseñas de la BD
+.env
+.env.local
+.env.*
